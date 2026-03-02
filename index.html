@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS Attribute Selector</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>1. Contoh [target]</h2>
+    <p>Link ini punya target="_blank": <a href="https://google.com" target="_blank">Buka Google di Tab Baru</a></p>
+    <p>Link ini tidak punya target: <a href="https://bing.com">Buka Bing di Tab Ini</a></p>
+
+    <hr>
+
+    <h2>2. Contoh input[type="text"]</h2>
+    <label>Input Nama (Type Text):</label>
+    <input type="text" placeholder="Ketik nama di sini...">
+
+    <label>Input Password (Type Password):</label>
+    <input type="password" placeholder="Ketik password...">
+
+    <hr>
+
+    <h2>3. Contoh a[href^="https"]</h2>
+    <p><a href="https://wikipedia.org">https://wikipedia.org (Situs Aman)</a></p>
+    <p><a href="http://contoh-situs-tua.com">http://contoh-situs-tua.com (Situs Biasa)</a></p>
+
+    <hr>
+
+    <h2>4. Bonus: File PDF [href$=".pdf"]</h2>
+    <p>Unduh panduan ini: <a href="materi-belajar.pdf">Panduan CSS.pdf</a></p>
+
+    <hr>
+    <h2>5. Draggable</h2>
+    <p draggable="true">Draggable:
+        <a draggable="true" href="https://stellarium-web.org/">Stellarium. </a>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <h2>6. Pilih-pilih paragraf</h2>
+    <p draggable="true">Drag aku, aku bisa loh</p>
+    <p>Aku tidak draggable</p>
+    <p class="tidakdrag">Aku juga tidak draggable</p>
+</div>
+
+</body>
+</html>
